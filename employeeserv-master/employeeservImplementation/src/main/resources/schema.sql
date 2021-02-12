@@ -1,0 +1,18 @@
+DROP TABLE IF EXISTS employee;
+DROP TABLE IF EXISTS address;
+CREATE TABLE employee (
+  id INT AUTO_INCREMENT NOT NULL,
+  firstName VARCHAR(250) NOT NULL,
+  lastName VARCHAR(250) NOT NULL,
+  birthDate VARCHAR(250) NOT NULL,
+  addressId INT NOT NULL
+);
+CREATE TABLE address (
+   id INT AUTO_INCREMENT NOT NULL,
+   line1 VARCHAR(40) NOT NULL,
+   line2 VARCHAR(40) default NULL,
+   city VARCHAR(40) NOT NULL,
+   state VARCHAR(40) NOT NULL,
+   country VARCHAR(40) NOT NULL,
+   zipCode VARCHAR(40) NOT NULL
+);
